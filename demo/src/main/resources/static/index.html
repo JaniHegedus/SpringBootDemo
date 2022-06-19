@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riven</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+            rel="stylesheet"
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
+    "
+    />
+</head>
+<body id="body">
+<div class="navbar">
+    <a href="index.html">Home</a>
+</div>
+
+<div class="hamburger-menu">
+    <input id="menu__toggle" onclick="disableScroll()" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+        <span></span>
+    </label>
+
+    <ul class="menu__box">
+        <li><a class="menu__item" href="index.html">Home</a></li>
+    </ul>
+</div>
+<div class="bgimg-1">
+    <div class="caption">
+        <span style="border-radius: 10px" class="border">Riven</span>
+    </div>
+</div>
+
+<div
+        style="
+        color: #777;
+        background-color: #282e34;
+        text-align: center;
+        padding: 50px 80px;
+        text-align: justify;
+      "
+>
+    <h3 style="text-align: center">Parallax Demo</h3>
+    <p>
+        Parallax scrolling is a web site trend where the background content is
+        moved at a different speed than the foreground content while scrolling.
+        Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed
+        posuere mollis ullamcorper libero ante lectus, blandit pellentesque a,
+        magna turpis est sapien duis blandit dignissim. Viverra interdum mi
+        magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur
+        aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque
+        non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt
+        mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan
+        fringilla vulputate at quibusdam sociis eleifend, aenean maecenas
+        vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare.
+        Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue
+        etiam maecenas, porta porttitor placerat leo.
+    </p>
+</div>
+
+<div class="bgimg-2">
+    <div class="container-container">
+        <div class="container">
+            <img
+                    src="IMAGES/0.jpg"
+                    alt="Avatar"
+                    class="image"
+                    style="width: 100%"
+                    onclick="analogGallery()"
+            />
+            <div class="middle">
+                <div class="text">Koncert</div>
+            </div>
+        </div>
+        <div class="container">
+            <img
+                    src="IMAGES/1.jpg"
+                    alt="Avatar"
+                    class="image"
+                    style="width: 100%"
+                    onclick="egyeniGallery()"
+            />
+            <div class="middle">
+                <div class="text">Egyéni</div>
+            </div>
+        </div>
+        <div class="container">
+            <img
+                    src="IMAGES/2.JPG"
+                    alt="Avatar"
+                    class="image"
+                    style="width: 100%"
+                    onclick="parosGallery()"
+            />
+            <div class="middle">
+                <div class="text">Páros</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="position: relative">
+    <div
+            style="
+          color: #ddd;
+          background-color: #282e34;
+          text-align: center;
+          padding: 50px 80px;
+          text-align: justify;
+        "
+    >
+        <p>
+            Scroll up and down to really get the feeling of how Parallax Scrolling
+            works.
+        </p>
+    </div>
+</div>
+
+<div class="bgimg-4">
+    <video controls src="VIDEOS/0.mp4"></video>
+</div>
+<div style="position: relative">
+    <div
+            style="
+          color: #ddd;
+          background-color: #282e34;
+          text-align: center;
+          padding: 50px 80px;
+          text-align: justify;
+        "
+    >
+        <p>
+            Scroll up and down to really get the feeling of how Parallax Scrolling
+            works.
+        </p>
+    </div>
+</div>
+<div class="bgimg-3">
+    <div class="social-btns">
+        <a
+                class="btn facebook"
+                href="https://www.facebook.com/profile.php?id=100005971489455"
+        ><i class="fa fa-facebook"></i
+        ></a>
+        <a class="btn facebook" href="https://www.instagram.com/tamaskutak/"
+        ><i class="fa fa-instagram"></i
+        ></a>
+        <a class="btn facebook" href="Contact.html"
+        ><i class="fa fa-google"></i
+        ></a>
+    </div>
+</div>
+
+<script>
+    function analogGallery() {
+        window.open("analogGallery.html", "_self");
+    }
+    function egyeniGallery() {
+        window.open("egyeniGallery.html", "_self");
+    }
+    function parosGallery() {
+        window.open("parosGallery.html", "_self");
+    }
+    function disableScroll() {
+        if (document.getElementById("menu__toggle").checked == true) {
+            document.getElementById("body").style.overflow = "hidden";
+            document.getElementById("body").scroll = "no";
+        } else if (document.getElementById("menu__toggle").checked == false) {
+            document.getElementById("body").style.overflow = "auto";
+            document.getElementById("body").scroll = "yes";
+        }
+    }
+</script>
+<link rel="stylesheet" href="Scripts.js" />
+</body>
+</html>
